@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="wrapper">
+        <div class="calheading">
+          <p id="realTime">6:40:04 PM</p>
+          <ul>
+            <li><i class="fa-solid fa-wifi"></i></li>
+            <li><i class="fa-solid fa-battery-full"></i></li>
+          </ul>
+        </div>
+        <div class="display">
+          <input id="input" type="text" placeholder="0" />
+          <h2 id="result">0</h2>
+        </div>
+        <div class="button">
+          <div class="buttonBox"><button onclick="blank()">AC</button></div>
+          <div class="buttonBox">
+            <button onclick="(displayValue('('))">(</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="(displayValue(')'))">)</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="deleteLast()">
+              <i class="fa-solid fa-delete-left"></i>
+            </button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="(displayValue('7'))">7</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="(displayValue('8'))">8</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="(displayValue('9'))">9</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="(displayValue('*'))">*</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="(displayValue('4'))">4</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="(displayValue('5'))">5</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="(displayValue('6'))">6</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="(displayValue('-'))">-</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="(displayValue('1'))">1</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="(displayValue('2'))">2</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="(displayValue('3'))">3</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="(displayValue('+'))">+</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="(displayValue('0'))">0</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="(displayValue('.'))">.</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="resultDisplay()">=</button>
+          </div>
+          <div class="buttonBox">
+            <button onclick="(displayValue('/'))">/</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- adding fontawesome.. -->
+    <script src="https://kit.fontawesome.com/e7f2043049.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
